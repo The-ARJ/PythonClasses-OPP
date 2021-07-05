@@ -1,15 +1,18 @@
-"""Multiplication in class"""
+"""Multiplication in class by method"""
 
 
 class Multi:
     def __init__(self, a):
         self.a = a
+
+    def mul(self):
         i = 1
-        n = 10
         while i <= 10:
-            total = a * i
-            print(a, "x", i, "=", total)
+            total = self.a * i
+            print(self.a, "x", i, "=", total)
             i = i + 1
 
 
 m1 = Multi(int(input("Enter a number : ")))
+
+m1.mul()
